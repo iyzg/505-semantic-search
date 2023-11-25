@@ -1,0 +1,88 @@
+:root { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  :root { font-family: 'Inter var', sans-serif; }
+}
+
+body,
+input,
+button {
+  font-size: 16px;
+  line-height: 24px;
+  color: #353740;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #acacbe;
+    border-radius: 5px;
+    flex: 1;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #8e8ea0;
+    opacity: 1; /* Firefox */
+}
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #8e8ea0;
+}
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #8e8ea0;
+}
+
+input {
+    width: 400px;
+}
+
+.result {
+    width: 600px;
+}
+
+input
+.result{
+    max-width: 90vw;
+}
+
+form {
+    display: flex;
+}
+
+.result {
+    display: flex;
+    align-items: flex-start;
+    margin: 16px 0;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.result:hover {
+    background-color: #ececf1;
+}
+
+.author {
+    margin-right: 10px; /* Add some space between the author and the message */
+    font-weight: bold;
+}
+
+.message {
+    font-size: 18px;
+}
